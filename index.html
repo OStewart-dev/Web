@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/png">
+        <script src="/js/script.js"></script>
+        <title>This is the way | Web Application</title>
+    </head>
+<body>
+    <div id="back-up-top" class="container">
+        <p><strong>Notice:</strong> For more information about COVID-19, click <a href="#more-info-COVID-19">here</a>. Also, click <a href="#login">here</a> or <a href="/sign-in.html">here</a> (with more options) to login.</p>
+        <h1>A Web Application will be here in the Future</h1>
+        <p>I love using Visual Studio Code for developing applications.</p>
+        <main>
+            <address>
+                <p>I am located somewhere in the world and I can be contacted using any of methods below.</p>
+                <p>Mobile number: <a href="tel:18762929940">1 (876) 292-9940</a></p>
+                <p>E-mail address: <a href="mailto:connect@ostewart.com">connect@ostewart.com</a></p>
+            </address>
+        </main>
+        <section>
+            <img src="/images/covid-19.jpg" alt="COVID-19" title="This a picture of what COVID-19 looks like.">
+            <h1>The Novel Coronavirus COVID-19</h1>
+            <p>There is a new strain of the novel coronavirus called COVID-19 which is wreaking havoc world wide.</p>
+
+            <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
+
+            <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+
+            <p>The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.</p>
+
+            <h3 id="more-info-COVID-19">More about COVID-19</h3>
+            <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it's important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
+
+            <p>At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.</p>
+
+            <p>Here are some things to consider:
+                
+                <ul>
+                    <li>Wash your hands with soap for at least 20 seconds.</li>
+                    <li>Use hand sanitizer or alcohol if you don't have running water. </li>
+                    <li>Do not touch your face.</li>
+                </ul>
+
+            </p>
+
+            <h3 id="login">Login your account below</h3>
+            <form action="/?oath">
+                <input type="email" placeholder="E-mail address" required autocomplete="username" name="username">
+                <input type="password" placeholder="Password" name="passwd" required> 
+                <button type="submit">Login</button>
+            </form>
+
+            <p>To learn more, visit the World Health Organization's (WHO) website <a href="http://who.int/" target="_blank">here</a>.</p>
+            <p class="ques">What is your favorite color?</p>
+            <form>
+                <label for="red">
+                    <input id="red" value="red" type="radio" name="select-color" required><span style="color: red;">red</span> 
+                </label>
+                    <br>
+                <label for="blue">
+                    <input id="blue" value="blue" type="radio" name="select-color" required><span style="color: blue;">blue</span>
+                </label>
+                    <br>
+                <label for="purple">
+                    <input id="purple" value="purple" type="radio" name="select-color" required><span style="color: purple;">purple</span>
+                </label>
+                    <br>
+                <label for="other">   
+                    <input id="other" value="other" type="radio" name="select-color" required>other 
+                </label>
+
+                    <br>
+                    <br>
+                <button type="submit">Submit</button>
+                    <br>
+                    <br>
+                <img src="/images/loading.gif" alt="loading">
+            </form>
+            <form>
+                <p class="ques">What are your favorite subjects?</p>
+                
+                <label for="mathematics">
+                    <input id="mathematics" value="mathematics" type="checkbox" name="favorite-subject" checked>Mathematics
+                </label>
+                    <br>
+                <label for="english">
+                    <input id="english" value="english" type="checkbox" name="favorite-subject">English
+                </label>
+                    <br>
+                <label for="science">
+                    <input id="science" value="science" type="checkbox" name="favorite-subject">Science
+                </label>
+                    <br>
+                <label for="music">
+                    <input id="music" value="music" type="checkbox" name="favorite-subject">Music
+                </label>
+                    <br>
+                <label for="arts">
+                    <input id="arts" value="arts" type="checkbox" name="favorite-subject">Arts
+                </label>
+                    <br>
+                    <br>
+                <button type="submit">Submit</button>
+            </form>
+
+            <form>
+                <p class="ques">Who is your favorite female singer?</p>
+                
+                <label for="celine-dion">
+                    <input id="celine-dion" value="celine-dion" type="checkbox" name="favorite-singer">Celine Dion
+                </label>
+                    <br>
+                <label for="whitney-houston">
+                    <input id="whitney-houston" value="whitney-houston" type="checkbox" name="favorite-singer">Whitney Houston 
+                </label>
+                    <br>
+                <label for="maria-carey">
+                    <input id="maria-carey" value="maria-carey"  type="checkbox" name="favorite-singer">Maria Carey 
+                </label>
+                    <br>
+                <label for="beyonce">
+                    <input id="beyonce" value="beyonce" type="checkbox" name="favorite-singer" checked>Beyonce
+                </label>
+                    <br>
+                <label for="rihanna">
+                    <input id="rihanna" value="rihanna" type="checkbox" name="favorite-subject" checked>Rihanna
+                </label>
+                    <br>
+                    <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p><a href="#back-up-top">Back up top</a></p>
+        </footer>
+    </div>
+</body>
+</html>
