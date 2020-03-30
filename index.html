@@ -1,185 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Sign-in to your Account</title>
+        <title>Welcome!</title>
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/png">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <style> 
-            #sign-in {
+
+        <style type="text/css">
+            #container {
                 max-width: 500px;
                 margin: auto;
-                margin-top: 70px;
-            }
-            #email {
-               width: 500px; 
-               height: 35px;
-               margin: 10px 0 10px 0;
-               padding-left: 10px;
-               border-radius: 5px;
-               border: 2px solid rebeccapurple;
-               color: #696969;
-               outline: none;
-            }
-
-            #password {
-                width: 500px;
-                height: 35px;
-                margin-top: 10px;
-                padding-left: 10px;
-                border-radius: 5px;
-                border: 2px solid rebeccapurple;
-                color: #696969;
-                outline: none;
-            }
-            .heading {
-                color: rebeccapurple;
-                font-family: 'Open Sans', sans-serif; 
-            }
-            #no-account {
+                margin-top: 60px;
                 font-family: Arial, Helvetica, sans-serif;
                 color: #696969;
-            }
-            #no-account {
-                display: block;
-                margin: 1em 0 1em 0;
-            }
-            #no-account a {
-                text-decoration: none;
-                color: green;
-            }
-            #no-account a:hover {
-                color: red;
-            }
-            #forget-password a {
-                font-family: Arial, Helvetica, sans-serif;
-                color: green;
-                text-decoration: none;
-            }
-            #forget-password a:hover{
-                color: red;
-            }
-            #kp {
-                display: block;
-                margin: 1em 0 1em 0;
-                font-family: Arial, Helvetica, sans-serif;
-                color: #696969;
-            }
-            #keep-signed-in {
-                border: 1px solid rebeccapurple;
-            }
-                
-            #submit {
-                width: 510px;
-                height: 50px;
-                background-color: rebeccapurple;
-                color: #fff;
                 font-size: 1rem;
-                border-radius: 10px;
-                border: 2px solid rebeccapurple;
             }
-            #submit:hover {
-                background-color: #fff;
+            #heading-1 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 3rem;
                 color: rebeccapurple;
             }
-            #sg-in {
-                font-size: 16px !important;
+            #heading-2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.5rem;
+                color: rebeccapurple;
             }
-            /* Check box */
-            /* The container */
-                .check-container {
-                display: block;
-                position: relative;
-                padding-left: 35px;
-                margin-bottom: 12px;
-                cursor: pointer;
-                font-size: 22px;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-                }
+            #follow-link a {
+                text-decoration: none;
+                color: green;
+            }
 
-                /* Hide the browser's default checkbox */
-                .check-container input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-                }
+            #follow-link a:hover {
+                color: red;
+            }
 
-                /* Create a custom checkbox */
-                .checkmark {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 25px;
-                width: 25px;
-                background-color: #fff;
-                border-radius: 5px;
-                border: 1px solid rebeccapurple;
-                }
-
-                /* On mouse-over, add a grey background color */
-                .check-container:hover input ~ .checkmark {
-                background-color: #ccc;
-                }
-
-                /* When the checkbox is checked, add a blue background */
-                .check-container input:checked ~ .checkmark {
-                background-color: rebeccapurple;
-                }
-
-                /* Create the checkmark/indicator (hidden when not checked) */
-                .checkmark:after {
-                content: "";
-                position: absolute;
-                display: none;
-                }
-
-                /* Show the checkmark when checked */
-                .check-container input:checked ~ .checkmark:after {
-                display: block;
-                }
-
-                /* Style the checkmark/indicator */
-                .check-container .checkmark:after {
-                left: 9px;
-                top: 5px;
-                width: 5px;
-                height: 10px;
-                border: solid white;
-                border-width: 0 3px 3px 0;
-                -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                transform: rotate(45deg);
-                } 
         </style>
     </head>
 <body>
-    <div id="sign-in">
-        <h1 class="heading">Welcome to the Web Portal</h1>
-        <h3 class="heading">Sign-in to your account</h3>
+    <div id="container">
         <section>
-            <form>
-                <input id="email" type="email" placeholder="E-mail address" name="email" spellcheck="false" required>
-                <input id="password" type="password" placeholder="Password" name="passwd" required>
-                    <div id="kp" class="check-container">
-                        <label for="keep-signed-in">
-                            <input id="keep-signed-in" type="checkbox" checked="checked" name="keep-signed-in" value="keep-signed-in"><span id="sg-in">Keep signed-in?</span> 
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                <input id="submit" type="submit" value="Sign-in">
-            </form>
-            <span id="no-account">
-                Don't have an account? <a href="/sign-up.html">Sign-up</a>
-            </span>
-            <span id="forget-password">
-                <a href="/reset-passwd.html">Forget your password?</a>
-            </span>
+            <main>
+                <h1 id="heading-1">Hi there!</h1>
+                <h2 id="heading-2">Please sign-in to your account to continue.</h2>
+                <span id="follow-link">
+                    Please follow this link to the sign-in page: <a href="/signin/">Sign-In</a>
+                </span>
+            </main>
         </section>
     </div>
-
 </body>
+
 </html>
