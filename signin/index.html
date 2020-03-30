@@ -5,10 +5,17 @@
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/png">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <style> 
-            #sign-in {
-                max-width: 500px;
+            #container {
+                max-width: 100%;
                 margin: auto;
                 margin-top: 70px;
+            }
+            #border {
+                width: 500px;
+                border: 1px solid rebeccapurple;
+                margin: auto;
+                padding: 30px 200px 70px 200px;
+                border-radius: 10px;
             }
             #email {
                width: 500px; 
@@ -163,28 +170,30 @@
         </style>
     </head>
 <body>
-    <div id="sign-in">
-        <h1 id="heading-1">Welcome to the Web Portal</h1>
-        <h3 id="heading-3">Sign-in to your account</h3>
-        <section>
-            <form>
-                <input id="email" type="email" placeholder="E-mail address" name="email" spellcheck="false" required>
-                <input id="password" type="password" placeholder="Password" name="passwd" required>
-                    <div id="kp" class="check-container">
-                        <label for="keep-signed-in">
-                            <input id="keep-signed-in" type="checkbox" checked="checked" name="keep-signed-in" value="keep-signed-in"><span id="sg-in">Keep signed-in?</span> 
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                <input id="submit" type="submit" value="Sign-in">
-            </form>
-            <span id="no-account">
-                Don't have an account? <a href="#">Sign-up</a>
-            </span>
-            <span id="forget-password">
-                <a href="#">Forget your password?</a>
-            </span>
-        </section>
+    <div id="container">
+        <div id="border">
+            <h1 id="heading-1">Welcome to the Web Portal</h1>
+            <h3 id="heading-3">Sign-in to your account</h3>
+            <section>
+                <form>
+                    <input id="email" type="email" placeholder="E-mail address" name="email" spellcheck="false" required>
+                    <input id="password" type="password" placeholder="Password" name="passwd" required>
+                        <div id="kp" class="check-container">
+                            <label for="keep-signed-in">
+                                <input id="keep-signed-in" type="checkbox" checked="checked" name="keep-signed-in" value="keep-signed-in"><span id="sg-in">Keep signed-in?</span> 
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    <input id="submit" type="submit" value="Sign-in">
+                </form>
+                <span id="no-account">
+                    Don't have an account? <a href="#">Sign-up</a>
+                </span>
+                <span id="forget-password">
+                    <a href="#">Forget your password?</a>
+                </span>
+            </section>
+        </div>
     </div>
 
 </body>
